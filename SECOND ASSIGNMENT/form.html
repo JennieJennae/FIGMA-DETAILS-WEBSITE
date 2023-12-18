@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp|Individual</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+   <nav>
+    <a href="#">Sign Up|Individual</a>
+   </nav> 
+
+   <section class="mainbox flex">
+    <section class="SignUp-Page flex">
+        <section class="leftside">
+            <img src="/SECOND ASSIGNMENT/Logo.png" alt="Logo">
+            <h1>For Individuals</h1>
+            <p>Start benefiting from the wellness experience. For <br>companies looking on increasing productivity, and improving organization wellness.</p>
+        </section>
+        <section class="rightside">
+            <form class="form" action="POST">
+                <div class="column">
+                    <div class="input-box">
+                        <label for="f-name">First Name</label>
+                        <input id="f-name" type="text" placeholder="Tolu">
+                    </div>
+                    <div class="input-box">
+                        <label for="l-name">Last Name</label>
+                        <input id="l-name" type="text">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label for="ge">Gender</label>
+                        <div class="select-box">
+                            <select name="gender" id="ge">
+                                <option value="" disabled selected hidden>Select here</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box">    
+                        <label for="Date">Date of Birth</label>
+                        <input type="text" id="Date" placeholder="Select here" onfocus="(this.type='date')" onblur="{this.type='text'}">
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="input-box">
+                        <label for="weight">Weight (KG)</label>
+                        <input type="text" id="weight" placeholder="Enter Weight">
+                    </div>
+                    <div class="input-box">
+                        <label for="weight">Height (CM)</label>
+                        <input type="text" id="weight" placeholder="Enter height here">   
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="active">Activity Level</label>
+                    <div class="select-box">
+                        <select name="active" id="active">
+                            <option value="" disabled selected hidden>Select here</option>
+                            <option value="Low">Low</option>
+                            <option value="Moderate">Moderate</option>
+                            <option value="High">High</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password"> 
+                </div>
+                <button>Register</button>
+                <div class="termsofuse">
+                    <p>By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>.</p>
+                </div>
+            </form>
+        </section> 
+    </section>
+   </section>
+
+</body>
+</html>
