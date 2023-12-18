@@ -1,0 +1,205 @@
+:root{
+    --cl-green: rgba(46, 196, 182, 0.04);
+    --cl-green-full: rgba(46, 196, 182, 1);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cl-green);
+    font-size: 16px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.mainbox{
+    max-width: 1440px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.SignUp-Page{
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.SignUp-Page .leftside{
+    margin-top: 0.5px;
+    padding-left: 140px;
+}
+
+h1{
+    font-family: brown;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+}
+
+.leftside p{
+    color: var(--cl-grey, #737373);
+    font-family: Brown;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+    width: 460px;
+    margin-top: 10px;
+}
+
+.rightside{
+    max-width: 580px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    margin-top: 80px;
+    margin-right: 140px;
+    margin-bottom: 80px;
+    padding: 40px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form .column{
+    display: flex;
+    column-gap: 24px;
+}
+
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form :where(.input-box input, .select-box){
+    position: relative;
+    height: 48px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus{
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+}
+
+.select-box select{
+    width: 100%;
+    outline: none;
+    border: none;
+    color: var(--text-headings, #011C34);
+    font-family: Sofia Pro;
+    font-size: 0.875rem;
+    padding-left: 16px;
+    margin-top: 16px;
+}
+
+.label{
+    color: var(--text-headings, #011C34);
+    font-family: Sofia Pro;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+    max-width: 159px;
+}
+
+::placeholder{
+    color: var(--text-headings, #011C34);
+    font-family: Sofia Pro;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    max-width: 170px;
+    padding-left: 16px;
+}
+
+.form button {
+    height: 48px;
+    width: 100%;
+    font-family: Sofia Pro;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: var(--cl-green-full);
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+}
+
+.form button:hover {
+    background: darkcyan;
+}
+
+.termsofuse p{
+    margin-top: 16px;
+    color: #000;
+    font-family: Sofia Pro;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; 
+}
+
+.termsofuse a{
+    color: var(--cl-green-full);
+    font-family: Sofia Pro;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration-line: underline;
+}
+
+@media(max-width: 840px){
+    .mainbox .SignUp-Page{
+        min-width: 375px;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        justify-content: center;
+        align-items: left; 
+        gap: 40px;
+        padding-inline: 1.3rem;
+    }
+
+    .leftside{
+        margin-bottom: 0.01rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    form{
+        padding: 15px;
+        align-items: center;
+    }
+
+    .form .column {
+        min-width: 375px;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
